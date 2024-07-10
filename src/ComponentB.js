@@ -1,32 +1,32 @@
 import React from "react";
-class ComponentA extends React.Component {
+class ComponentB extends React.Component {
   constructor() {
     super();
 
     this.state = {
-      name: "ComponentA",
+      name: "ComponentB",
     };
-    console.log("ComponentA Constructor");
+    console.log("ComponentB Constructor");
   }
 
   static getDerivedStateFromProps(props, state) {
-    console.log("ComponentA getDriveredStateByProps");
+    console.log("ComponentB getDriveredStateByProps");
     return null;
   }
   componentDidMount() {
     console.log("ComponntA ComponentDidMount");
   }
   render() {
-    console.log("ComponentA render");
+    console.log("ComponentB render");
     // this.setState({
     //   name: "CA",
     // });
 
     return (
       <>
-        <h1>{this.state.name}</h1>
+        <h2>{this.state.name}</h2>
       </>
     );
   }
 }
-export default ComponentA;
+export default ComponentB;
