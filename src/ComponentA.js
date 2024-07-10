@@ -7,13 +7,9 @@ class ComponentA extends React.Component {
       name: "ComponentA",
     };
     console.log("ComponentA Constructor");
-
-    this.setState({
-      name: "CA",
-    });
   }
-  lkfndscfn;
-  static getDerivedStateFromProps() {
+
+  static getDerivedStateFromProps(props, state) {
     console.log("ComponentA getDriveredStateByProps");
     return null;
   }
@@ -22,6 +18,10 @@ class ComponentA extends React.Component {
   }
   render() {
     console.log("ComponentA render");
+    // this.setState({
+    //   name: "CA",
+    // });
+
     return (
       <>
         <h1>{this.state.name}</h1>
