@@ -64,5 +64,4 @@ class ComponentA extends React.Component {
 
 
 
-
 export default ComponentA;
