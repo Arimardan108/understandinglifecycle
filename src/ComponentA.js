@@ -50,10 +50,7 @@ class ComponentA extends React.Component {
                 <td>{item.email}</td>
               </tr>
             ))}
-          </tbody>
-
-
-          
+          </tbody>          
         </table>
         <ul>
           {this.state.data.map((item) => (
