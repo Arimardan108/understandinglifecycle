@@ -57,9 +57,6 @@ class ComponentA extends React.Component {
             <li>{item.username}</li>
           ))}
         </ul>
-
-
-        
       </>
     );
   }
