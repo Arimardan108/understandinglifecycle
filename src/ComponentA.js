@@ -51,6 +51,9 @@ class ComponentA extends React.Component {
               </tr>
             ))}
           </tbody>
+
+
+          
         </table>
         <ul>
           {this.state.data.map((item) => (
