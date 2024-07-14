@@ -42,11 +42,6 @@ class ComponentA extends React.Component {
         </ul>
       </>
     );
-
-
-
-
-    
   }
 }
 
