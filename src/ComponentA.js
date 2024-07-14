@@ -34,24 +34,7 @@ class ComponentA extends React.Component {
     return (
       <>
         <h1>{this.state.name}</h1>
-        <table>
-          <thead>
-            <tr>
-              <th>Id</th>
-              <th>Name</th>
-              <th>Email</th>
-            </tr>
-          </thead>
-          <tbody>
-            {this.state.data.map((item) => (
-              <tr>
-                <td>{item.id}</td>
-                <td>{item.name}</td>
-                <td>{item.email}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+
         <ul>
           {this.state.data.map((item) => (
             <li>{item.username}</li>
