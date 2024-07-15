@@ -26,7 +26,10 @@ export default class Timer extends React.Component {
     console.log("TimerOne render");
     return (
       <>
-        <h1>Time Spend:</h1>
+        <h1>
+          Time Spend:
+          {new Date(this.state.time * 1000).toISOString().slice(11, 19)}
+        </h1>
       </>
     );
   }
@@ -45,5 +48,8 @@ export default class Timer extends React.Component {
   componentDidUpdate() {
     console.log("TimerOne componentDidUpdate");
     console.log("___________________________");
+    if (this.state.time == 10) {
+      clearInterval(this.timer);
+    }
   }
 }
