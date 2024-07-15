@@ -33,9 +33,10 @@ export default class Timer extends React.Component {
   componentDidMount() {
     console.log("TimerOne componentDidMount");
     console.log("__________________________");
+
     this.timer = setInterval(() => {
       this.setState((prevState) => ({ time: prevState.time + 1 }));
-    });
+    }, 1000);
   }
   getSnapshotBeforeUpdate() {
     console.log("TimeOne getSanpshotBeforeUpdate");
