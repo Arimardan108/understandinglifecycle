@@ -5,11 +5,11 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      mount: false,
+      timerOn: false,
     };
   }
-  handleMount = () => {
-    this.setState((prevState) => ({ mount: !prevState.mount }));
+  handleTimerOn = () => {
+    this.setState((prevState) => ({ timerOn: !prevState.timerOn }));
   };
   render() {
     return (
