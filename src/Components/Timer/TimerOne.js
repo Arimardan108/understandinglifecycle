@@ -41,13 +41,18 @@ export default class Timer extends React.Component {
       this.setState((prevState) => ({ time: prevState.time + 1 }));
     }, 1000);
   }
-  getSnapshotBeforeUpdate() {
+  getSnapshotBeforeUpdate(prevProps, prevState) {
     console.log("TimeOne getSanpshotBeforeUpdate");
     return null;
   }
-  componentDidUpdate() {
+  componentDidUpdate(prevProps, prevState, snapShot) {
     console.log("TimerOne componentDidUpdate");
     console.log("___________________________");
+
+    console.log("Previous Props :", prevProps);
+    console.log("Previous State :", prevState);
+    console.log("SnapShot from getSnapshotbeforeUpdate", snapShot);
+
     if (this.state.time == 10) {
       clearInterval(this.timer);
     }
