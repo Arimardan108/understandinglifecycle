@@ -1,6 +1,6 @@
 import React from "react";
 import ComponentA from "./Components/Component/ComponentA";
-
+import ErrorBoundry from "./ErrorBoundry";
 class App extends React.Component {
   // constructor() {
   //   super();
@@ -9,7 +9,9 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <ComponentA />
+        <ErrorBoundry>
+          <ComponentA />
+        </ErrorBoundry>
       </>
     );
   }
