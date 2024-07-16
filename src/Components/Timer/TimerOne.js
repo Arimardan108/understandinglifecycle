@@ -14,14 +14,10 @@ export default class Timer extends React.Component {
     return null;
   }
   shouldComponentUpdate(nextProps, nextState) {
+    console.log(nextProps);
+    console.log(nextState);
     return true;
   }
-
-  handleIncrease = () => {
-    this.setState((prevState) => {
-      return { count: prevState.count + 1 };
-    });
-  };
   render() {
     console.log("TimerOne render");
     return (
@@ -32,10 +28,6 @@ export default class Timer extends React.Component {
         </h1>
       </>
     );
-  }
-  componentDidMount() {
-    console.log("TimerOne componentDidMount");
-    console.log("__________________________");
   }
   getSnapshotBeforeUpdate(prevProps, prevState) {
     console.log("TimeOne getSanpshotBeforeUpdate");
