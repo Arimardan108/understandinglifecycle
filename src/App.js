@@ -2,9 +2,9 @@ import React from "react";
 import ComponentA from "./Components/Component/ComponentA";
 
 class App extends React.Component {
-  constructor() {
-    super();
-  }
+  // constructor() {
+  //   super();
+  // }
 
   render() {
     return (
