@@ -52,4 +52,7 @@ export default class Timer extends React.Component {
       clearInterval(this.timer);
     }
   }
+  componentWillUnmount() {
+    console.log("TimerOne componentWillUnmount");
+  }
 }
