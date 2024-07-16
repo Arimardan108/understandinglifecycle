@@ -14,10 +14,10 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <button onClick={this.handleMount}>
-          {this.state.mount ? "UN-MOUNT" : "MOUNT"}
+        <TimerOne timerOn={this.state.timerOn} />
+        <button onClick={this.handleTimerOn}>
+          {this.state.timerOn ? "Stop" : "Start"}
         </button>
-        {this.state.mount ? <TimerOne /> : null}
       </>
     );
   }
