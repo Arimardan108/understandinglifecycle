@@ -21,6 +21,6 @@ export default class ErrorBoundry extends Component {
     if (this.state.hasError) {
       return <h1>Something went wrong. Concect Admin</h1>;
     }
-    return <></>;
+    return this.props.children;
   }
 }
